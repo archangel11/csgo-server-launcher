@@ -33,14 +33,14 @@
 #                                                                                #
 ##################################################################################
 
-SCREEN_NAME="csgo"
-USER="steam"
-IP="198.51.100.0"
-PORT="27015"
+SCREEN_NAME="www.zealotgaming.com - War"
+USER="archix"
+IP="108.166.185.22"
+PORT="27000"
 
 DIR_STEAMCMD="/var/steamcmd"
-STEAM_LOGIN="anonymous"
-STEAM_PASSWORD="anonymous"
+STEAM_LOGIN="wnxarchangel"
+STEAM_PASSWORD=""
 STEAM_RUNSCRIPT="$DIR_STEAMCMD/runscript_$SCREEN_NAME"
 
 DIR_ROOT="$DIR_STEAMCMD/games/csgo"
@@ -49,18 +49,18 @@ DIR_LOGS="$DIR_GAME/logs"
 DAEMON_GAME="srcds_run"
 
 UPDATE_LOG="$DIR_LOGS/update_`date +%Y%m%d`.log"
-UPDATE_EMAIL=""
+UPDATE_EMAIL="greak94@yahoo.com"
 UPDATE_RETRY=3
 
 # Workshop : https://developer.valvesoftware.com/wiki/CSGO_Workshop_For_Server_Operators
-API_AUTHORIZATION_KEY="" # http://steamcommunity.com/dev/registerkey
-WORKSHOP_COLLECTION_ID="125499818" # http://steamcommunity.com/sharedfiles/filedetails/?id=125499818
-WORKSHOP_START_MAP="125488374" # http://steamcommunity.com/sharedfiles/filedetails/?id=125488374
+API_AUTHORIZATION_KEY="B8221D51139C7666A6D95AE7512D44D3" # http://steamcommunity.com/dev/registerkey
+WORKSHOP_COLLECTION_ID="202752592" # http://steamcommunity.com/sharedfiles/filedetails/?id=202752592
+WORKSHOP_START_MAP="197146184" # http://steamcommunity.com/sharedfiles/filedetails/?id=197146184
 
 # Game config
-MAXPLAYERS="18"
+MAXPLAYERS="24"
 TICKRATE="64"
-EXTRAPARAMS="-nohltv +sv_pure 0 +game_type 0 +game_mode 0 +mapgroup mg_bomb +map de_dust2"
+EXTRAPARAMS="-nohltv +sv_pure 0 +game_type 1 +game_mode 0 +mapgroup mg_hostage +map cs_office"
 
 PARAM_START="-game csgo -console -usercon -secure -autoupdate -steam_dir ${DIR_STEAMCMD} -steamcmd_script ${STEAM_RUNSCRIPT} -maxplayers_override ${MAXPLAYERS} -tickrate ${TICKRATE} +hostport ${PORT} +ip ${IP} +net_public_adr ${IP} ${EXTRAPARAMS}"
 PARAM_UPDATE="+login ${STEAM_LOGIN} ${STEAM_PASSWORD} +force_install_dir ${DIR_ROOT} +app_update 740 validate +quit"
