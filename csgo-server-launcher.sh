@@ -33,14 +33,14 @@
 #                                                                                #
 ##################################################################################
 
-SCREEN_NAME="www.zealotgaming.com - War"
+SCREEN_NAME="www.zealotgaming.com - End of War II"
 USER="archix"
 IP="108.166.185.22"
 PORT="27000"
 
 DIR_STEAMCMD="/var/steamcmd"
 STEAM_LOGIN="wnxarchangel"
-STEAM_PASSWORD=""
+STEAM_PASSWORD="Matthew94"
 STEAM_RUNSCRIPT="$DIR_STEAMCMD/runscript_$SCREEN_NAME"
 
 DIR_ROOT="$DIR_STEAMCMD/games/csgo"
