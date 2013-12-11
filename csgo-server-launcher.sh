@@ -34,7 +34,7 @@
 ##################################################################################
 
 SCREEN_NAME="www.zealotgaming.com - End of War II"
-USER="archix"
+USER="csgoadmin"
 IP="108.166.185.22"
 PORT="27000"
 
